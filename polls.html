@@ -1,0 +1,46 @@
+<!--Scott Killeen's Project-->
+<!--This is where people can vote and you can see closed polls.-->
+<html>
+<head>
+	<title>QueensU Gamers</title>
+	<link href="shortcut.png" type="image/gif" rel="shortcut icon"/>
+	<link rel="stylesheet" type="text/css" href="ProjectCSS/homepageCSS.css"/>
+	<script src="pollsJS.js" type="text/javascript"></script>
+	  <script type="text/javascript" src="canvasjs.min.js"></script>
+	<div class="top">
+	<h1><br> </h1>
+	<!--Making Tabs-->
+<ul class="tabrow">
+    <li id="tab1"><a href="homepage.html" onclick="switchTab();">Home</a></li>
+    <li id="tab2"><a href="feedback.html" onclick="switchTab1();">Feedback</a></li>
+    <li id="tab3"><a href="about.html" onclick="switchTab2();">About</a></li>
+    <li class="selected" id="tab4"><a href="polls.html" onclick="switchTab3();">Polls</a></li>
+</ul>
+</div>
+</head>
+
+<body>
+	<br>
+	<center> <h2> Open Polls </h2> 
+   <h3> <br> Where do you want us to Order Pizza From?</h3>
+   <!--Making a poll-->
+ <div class="pollSelection divbackground">
+	<input type="radio" name="interested" value="Little Ceasers"> Little Ceasers
+	<input type="radio" name="interested" value="Pizza Pizza"> Pizza Pizza
+	<input type="radio" name="interested" value="Dominos"> Dominos <br> <br>
+	<input type="button" value="Submit" onClick="submitButton();">
+	<p class="pollInfo">Poll results are posted two weeks after the poll was first posted. <p>
+</div>
+
+   <h2> Closed Polls </h2> 
+   <!--Used canvas and the canvasjs library for these polls. See the pollsJS.js javascript to see how they are made.-->
+   <div id="chartContainer" style="height: 300px; width: 50%;"> 
+   </div>
+   <br>
+   <div id="chartContainerTwo" style="height: 300px; width: 50%;"> 
+   </div>
+   <br>
+
+</center>
+</body>
+</html>
